@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogos de componentes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Catálogos de componentes</h1>
+    </header>
+    
+    <div class="contenedor-principal">
+        <aside class="barra-lateral">
+            <h2>Filtros Avanzados</h2>
+            <form class="filtros-formulario">
+                <label for="categoria">Categoría</label>
+                <select id="categoria" name="categoria">
+                    <option value="todos">Todos los componentes</option>
+                    <option value="procesadores">Procesadores</option>
+                    <option value="memoria">Memoria RAM</option>
+                    <option value="almacenamiento">Almacenamiento</option>
+                    <option value="graficas">Tarjetas gráficas</option>
+                    <option value="tarjetas-madre">Tarjetas madre</option>
+                    <option value="energia">Fuentes de poder</option>
+                    <option value="monitores">Monitores</option>
+                    <option value="perifericos">Periféricos</option>
+                    <option value="refrigeracion">Refrigeración</option>
+                    <option value="redes">Redes</option>
+                </select>
+
+                <fieldset>
+                    <legend>Marca</legend>
+                    <label><input type="checkbox" name="marca" value="amd"> AMD</label>
+                    <label><input type="checkbox" name="marca" value="kingston"> Kingston</label>
+                    <label><input type="checkbox" name="marca" value="adata"> ADATA</label>
+                    <label><input type="checkbox" name="marca" value="asus"> ASUS</label>
+                    <label><input type="checkbox" name="marca" value="acteck"> Acteck</label>
+                    <label><input type="checkbox" name="marca" value="msi"> MSI</label>
+                    <label><input type="checkbox" name="marca" value="corsair"> Corsair</label>
+                    <label><input type="checkbox" name="marca" value="tp-link"> TP-Link</label>
+                </fieldset>
+
+                <button class="boton-filtros" type="submit">Aplicar filtros</button>
+            </form>
+            <div id="grafico-comparativa">
+                <p>Gráfica renderizada</p>
+            </div>
+        </aside>
+        
+        <main class="cuadricula-productos">
+            <!-- Tarjeta 1: CPU -->
+            <article class="tarjeta" data-category="procesadores" data-brand="amd">
+                <img src="/image/cpu.webp" alt="Procesador">
+                <h3>Procesador AMD Ryzen</h3>
+                <p>Multiprocesamiento extremo de alta eficiencia.</p>
+                <button>Comprar</button>
+            </article>
+
+            <!-- Tarjeta 2: RAM -->
+            <article class="tarjeta" data-category="memoria" data-brand="kingston">
+                <img src="/image/ram.webp" alt="Memoria RAM">
+                <h3>Memoria RAM 32GB DDR5</h3>
+                <p>Alta velocidad para estaciones de trabajo.</p>
+                <button>Comprar</button>
+            </article>
+
+            <!-- Tarjeta 3: SSD -->
+            <article class="tarjeta" data-category="almacenamiento" data-brand="adata">
+                <img src="/image/ssd.webp" alt="SSD NVMe">
+                <h3>Disco SSD M.2 NVMe 1TB</h3>
+                <p>Lectura y escritura ultrarrápida.</p>
+                <button>Comprar</button>
+            </article>
+
+            <!-- Tarjeta 4: GPU -->
+            <article class="tarjeta" data-category="graficas" data-brand="asus">
+                <img src="/image/gpu.webp" alt="Tarjeta Gráfica">
+                <h3>Tarjeta Gráfica Dedicada</h3>
+                <p>Potencia de cálculo gráfico avanzado.</p>
+                <button>Comprar</button>
+            </article>
+
+            <article class="tarjeta" data-category="tarjetas-madre" data-brand="asus">
+                <img src="/image/tarjetamadre.webp" alt="Tarjeta madre">
+                <h3>Tarjeta madre ASUS</h3>
+                <p>Conectividad y expansión para tu equipo.</p>
+                <button>Comprar</button>
+            </article>
+
+            <article class="tarjeta" data-category="energia" data-brand="acteck">
+                <img src="/image/fuentepoder.webp" alt="Fuente de poder">
+                <h3>Fuente de poder 750W</h3>
+                <p>Energía estable y eficiente para tu equipo.</p>
+                <button>Comprar</button>
+            </article>
+
+            <article class="tarjeta" data-category="monitores" data-brand="asus">
+                <img src="/image/monitor.webp" alt="Monitor">
+                <h3>Monitor Full HD</h3>
+                <p>Pantalla nítida para trabajo y entretenimiento.</p>
+                <button>Comprar</button>
+            </article>
+
+            <article class="tarjeta" data-category="perifericos" data-brand="acteck">
+                <img src="/image/mouse.webp" alt="Mouse">
+                <h3>Mouse Acteck óptico USB</h3>
+                <p>Alámbrico, 1000 DPI, color negro.</p>
+                <button>Comprar</button>
+            </article>
+
+            <article class="tarjeta" data-category="refrigeracion" data-brand="msi">
+                <img src="/image/disipador.webp" alt="Disipador para procesador">
+                <h3>Disipador para procesador</h3>
+                <p>Ayuda a mantener la temperatura del CPU.</p>
+                <button>Comprar</button>
+            </article>
+
+            <article class="tarjeta" data-category="refrigeracion" data-brand="corsair">
+                <img src="/image/pastatermica.webp" alt="Pasta térmica">
+                <h3>Pasta térmica</h3>
+                <p>Mejora la transferencia de calor del procesador.</p>
+                <button>Comprar</button>
+            </article>
+
+            <article class="tarjeta" data-category="redes" data-brand="tp-link">
+                <img src="/image/tarjetared.webp" alt="Tarjeta de red">
+                <h3>Tarjeta de red</h3>
+                <p>Conexión de red para equipos de escritorio.</p>
+                <button>Comprar</button>
+            </article>
+
+            <article class="tarjeta" data-category="perifericos" data-brand="acteck">
+                <img src="/image/teclado.webp" alt="Teclado">
+                <h3>Teclado</h3>
+                <p>Teclas cómodas para escribir y trabajar.</p>
+                <button>Comprar</button>
+            </article>
+        </main>
+    </div>
+    <script src="/js/filters.js"></script>
+</body>
+</html>
